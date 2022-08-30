@@ -1,8 +1,24 @@
 <a href="https://totaltypescript.com"><img src="./og-image.png" /></a>
 
+# Generics in TypeScript: a deep dive
+
+Generics in TypeScript are one of the most powerful, least well-documented features of an extraordinary language. They allow for some of the wizardry you'll have seen in your favourite open-source libraries.
+
+In this module, we'll build our generics knowledge with practical examples taken from real open-source libraries. After completing it, you'll feel confident enough to start experimenting with your own ideas.
+
+## Prerequisites
+
+This module is **not** recommended for beginners. You'll need to have completed:
+
+1. [TypeScript for Beginners](https://github.com/total-typescript/beginners-typescript-tutorial)
+1. Intermediate TypeScript - not yet complete
+1. Type Transformations - not yet complete
+
+Still, if you want to continue - go ahead!
+
 ## Work in progress!
 
-This repository is a work-in-progress. Exercises may appear out of order, and there will likely be a lot of content inside the [`FUTURE`](./notes/FUTURE.md) notes.
+This module is a work-in-progress. Exercises may appear out of order, and there will likely be a lot of content inside the [`FUTURE`](./notes/FUTURE.md) notes.
 
 You'll still be able to run through the exercises, but expect some bumps along the way!
 
