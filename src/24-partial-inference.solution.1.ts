@@ -10,22 +10,27 @@ export const makeSelectors = <
 };
 
 interface Source {
-  a: string;
-  b: number;
-  c: boolean;
+  firstName: string;
+  middleName: string;
+  lastName: string;
 }
 
 // This doesn't work because TS can't infer the selectors type -
 // if you pass a SINGLE type argument it won't try to infer any
 // of the others
 const selectors = makeSelectors<Source>({
-  getA: (source) => source.a,
-  getB: (source) => source.b,
-  getC: (source) => source.c,
+  getFullName: (source) =>
+    `${source.firstName} ${source.middleName} ${source.lastName}`,
+  getFirstAndLastName: (source) => `${source.firstName} ${source.lastName}`,
+  getFirstNameLength: (source) => source.firstName.length,
 });
 
 type tests = [
-  Expect<Equal<typeof selectors["getA"], (source: Source) => string>>,
-  Expect<Equal<typeof selectors["getB"], (source: Source) => number>>,
-  Expect<Equal<typeof selectors["getC"], (source: Source) => boolean>>,
+  Expect<Equal<typeof selectors["getFullName"], (source: Source) => string>>,
+  Expect<
+    Equal<typeof selectors["getFirstAndLastName"], (source: Source) => string>
+  >,
+  Expect<
+    Equal<typeof selectors["getFirstNameLength"], (source: Source) => number>
+  >,
 ];
