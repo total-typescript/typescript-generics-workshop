@@ -45,7 +45,7 @@ it("Should create a reducer which can handle all events", () => {
       },
       LOGOUT: (state, event) => {
         type tests = [Expect<Equal<typeof event, { type: "LOGOUT" }>>];
-        return { ...state, isLoggedIn: true };
+        return { ...state, isLoggedIn: false };
       },
     },
   });
