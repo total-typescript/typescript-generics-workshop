@@ -3,7 +3,7 @@
  * in the 'data' declaration?
  */
 
-import { Equal, Expect } from "./helpers/type-utils";
+import { Equal, Expect } from "../helpers/type-utils";
 
 export interface UserData {
   data: {

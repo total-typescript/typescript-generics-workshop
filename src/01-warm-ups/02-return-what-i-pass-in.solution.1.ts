@@ -1,4 +1,4 @@
-import { Equal, Expect } from "./helpers/type-utils";
+import { Equal, Expect } from "../helpers/type-utils";
 
 function returnWhatIPassIn(t: "matt"): "matt";
 function returnWhatIPassIn(t: 1): 1;
