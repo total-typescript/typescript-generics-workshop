@@ -4,6 +4,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 export interface Cache<T> {
   get: (key: string) => T | undefined;
   set: (key: string, value: T) => void;
+  clone: <U>(transform: (elem: T) => U) => Cache<U>;
 }
 
 const createCache = <T>(initialCache?: Record<string, T>): Cache<T> => {
@@ -13,6 +14,14 @@ const createCache = <T>(initialCache?: Record<string, T>): Cache<T> => {
     get: (key) => cache[key],
     set: (key, value) => {
       cache[key] = value;
+    },
+    clone: <U>(transform: (elem: T) => U) => {
+      const newCache: Record<string, U> = {};
+
+      for (const key in cache) {
+        newCache[key] = transform(cache[key]);
+      }
+      return createCache(newCache);
     },
   };
 };
