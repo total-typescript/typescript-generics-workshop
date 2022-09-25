@@ -9,7 +9,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@main
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: latest
       - name: Cache node modules
