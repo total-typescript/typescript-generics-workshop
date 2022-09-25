@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@main
-      - name: Install Node.js 16.x
+      - name: Install Node.js
         uses: actions/setup-node@v2
         with:
           node-version: latest
