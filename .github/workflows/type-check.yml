@@ -1,0 +1,29 @@
+name: Type Check
+
+on: [ pull_request ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@main
+      - name: Install Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: latest
+      - name: Cache node modules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-type-check-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-type-check-${{ env.cache-name }}-
+            ${{ runner.os }}-type-check-
+            ${{ runner.os }}-
+      - name: Install Dependencies
+        run: npm ci
+      - name: Type Check
+        run: npx tsc src/**.solution.ts --noEmit --strict
