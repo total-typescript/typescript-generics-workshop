@@ -8,7 +8,7 @@ const obj = {
 
 type ObjKey = keyof typeof obj;
 
-function getObjKey(): 1;
+function getObjKey(): typeof obj["a"];
 function getObjKey<TKey extends ObjKey>(key: TKey): typeof obj[TKey];
 function getObjKey(key: ObjKey = "a") {
   return obj[key];
