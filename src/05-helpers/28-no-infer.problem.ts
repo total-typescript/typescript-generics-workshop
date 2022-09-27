@@ -1,3 +1,9 @@
+// import { F } from "ts-toolbelt";
+
+/**
+ * Clue - F.NoInfer is part of the solution
+ */
+
 interface Config<TState extends string> {
   initial: TState;
   states: Record<TState, {}>;
