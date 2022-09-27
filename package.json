@@ -13,11 +13,12 @@
   },
   "scripts": {
     "exercise": "node scripts/exercise.js",
-    "e": "yarn exercise",
-    "solution": "SOLUTION=true node scripts/exercise.js",
-    "s": "yarn solution"
+    "e": "npm run exercise",
+    "solution": "cross-env SOLUTION=true node scripts/exercise.js",
+    "s": "npm run solution"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "fast-glob": "^3.2.12",
     "ts-toolbelt": "^9.6.0"
   }
