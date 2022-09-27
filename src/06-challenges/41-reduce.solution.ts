@@ -10,10 +10,10 @@ const array = [
   },
 ];
 
-const obj = array.reduce((accum, item) => {
+const obj = array.reduce<Record<string, { name: string }>>((accum, item) => {
   accum[item.name] = item;
   return accum;
-}, {} as Record<string, { name: string }>);
+}, {});
 
 it("Should resolve to an object where name is the key", () => {
   expect(obj).toEqual({
