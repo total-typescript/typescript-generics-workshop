@@ -1,4 +1,4 @@
-<a href="https://totaltypescript.com"><img src="./og-image.png" /></a>
+<a href="https://totaltypescript.com"><img src="./og-image-new.png" /></a>
 
 ## Quickstart
 
