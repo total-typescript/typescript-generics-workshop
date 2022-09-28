@@ -1,10 +1,12 @@
 import { expect, it } from "vitest";
 
+type ValidatorsBase = Record<string, (value: string) => string | void>;
+
+type ValidatorConfig<ValidatorKey> = Record<string, Array<ValidatorKey>>;
+
 const makeFormValidatorFactory =
-  <TValidators extends Record<string, (value: string) => string | void>>(
-    validators: TValidators,
-  ) =>
-  <TInput extends Record<string, Array<keyof TValidators>>>(config: TInput) => {
+  <TValidators extends ValidatorsBase>(validators: TValidators) =>
+  <TInput extends ValidatorConfig<keyof TValidators>>(config: TInput) => {
     return (
       values: Record<keyof TInput, string>,
     ): Record<keyof TInput, string | undefined> => {

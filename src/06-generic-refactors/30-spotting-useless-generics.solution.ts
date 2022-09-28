@@ -1,14 +1,14 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-/**
- * The function we made earlier could be refactored
- * to use only ONE generic.
- */
-const returnBothOfWhatIPassIn = <T1, T2>(params: {
-  a: T1;
-  b: T2;
-}): [T1, T2] => {
+const returnBothOfWhatIPassIn = <
+  TParams extends {
+    a: unknown;
+    b: unknown;
+  },
+>(
+  params: TParams,
+): [TParams["a"], TParams["b"]] => {
   return [params.a, params.b];
 };
 

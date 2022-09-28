@@ -22,12 +22,13 @@ const spanElement = document.querySelector("span");
  */
 
 /**
- * Here, I've used a cast to cast it to the expected type.
+ * Here, I've used a type argument to get it to return
+ * the expected type
  */
-const divElement2 = document.querySelector("div.foo") as HTMLDivElement | null;
+const divElement2 = document.querySelector<HTMLDivElement>("div.foo");
 
 type tests = [
   Expect<Equal<typeof divElement, HTMLDivElement | null>>,
   Expect<Equal<typeof spanElement, HTMLSpanElement | null>>,
-  Expect<Equal<typeof divElement2, HTMLDivElement | null>>
+  Expect<Equal<typeof divElement2, HTMLDivElement | null>>,
 ];
