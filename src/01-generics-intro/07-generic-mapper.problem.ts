@@ -1,16 +1,7 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-export const concatenateFirstNameAndLastName = <
-  T extends { firstName: string; lastName: string }
->(
-  user: T
-): T & { fullName: string } => {
-  return {
-    ...user,
-    fullName: `${user.firstName} ${user.lastName}`,
-  };
-};
+export const concatenateFirstNameAndLastName = (user: unknown): unknown => {};
 
 it("Should add fullName to an object which only contains firstName and lastName", () => {
   const users = [
