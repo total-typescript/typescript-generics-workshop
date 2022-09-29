@@ -6,7 +6,7 @@ Clone this repo or [open in Gitpod](https://gitpod.io/#https://github.com/total-
 
 ```sh
 # Installs all dependencies
-npm run install
+npm install
 
 # Starts the first exercise
 npm run exercise 01
