@@ -3,13 +3,24 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 const returnBothOfWhatIPassIn = (params: { a: unknown; b: unknown }) => {};
 
-it("Should return a tuple of the properties a and b", () => {
+it("Should return an object where a -> first and b -> second", () => {
   const result = returnBothOfWhatIPassIn({
     a: "a",
     b: 1,
   });
 
-  expect(result).toEqual(["a", 1]);
+  expect(result).toEqual({
+    first: "a",
+    second: 1,
+  });
 
-  type test1 = Expect<Equal<typeof result, [string, number]>>;
+  type test1 = Expect<
+    Equal<
+      typeof result,
+      {
+        first: string;
+        second: number;
+      }
+    >
+  >;
 });
