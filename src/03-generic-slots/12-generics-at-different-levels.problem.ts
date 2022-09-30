@@ -19,18 +19,10 @@ const appConfig = {
   },
 };
 
-export const getFeatureFlags = <HomePageFlags>(
-  config: {
-    rawConfig: {
-      featureFlags: {
-        homePage: HomePageFlags;
-      };
-    };
-  },
-  override: (flags: HomePageFlags) => HomePageFlags
-) => {
-  return override(config.rawConfig.featureFlags.homePage);
-};
+export const getFeatureFlags = (
+  config: unknown,
+  override: (flags: unknown) => unknown
+) => {};
 
 it("Should return the homePage flag object", () => {
   const flags = getFeatureFlags(appConfig, (flags) => flags);
