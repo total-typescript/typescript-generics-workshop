@@ -1,8 +1,12 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const typedObjectKeys = <TKey extends string>(obj: Record<TKey, any>) => {
-  return Object.keys(obj) as Array<TKey>;
+/**
+ * You can either specify the entire object in
+ * the generic slot...
+ */
+const typedObjectKeys = <TObject extends {}>(obj: TObject) => {
+  return Object.keys(obj) as Array<keyof TObject>;
 };
 
 it("Should return the keys of the object", () => {

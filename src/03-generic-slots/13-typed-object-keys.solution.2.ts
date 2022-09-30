@@ -1,7 +1,12 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const typedObjectKeys = (obj: unknown) => {};
+/**
+ * ...or you can specify the keys of the object.
+ */
+const typedObjectKeys = <TKey extends string>(obj: Record<TKey, any>) => {
+  return Object.keys(obj) as Array<TKey>;
+};
 
 it("Should return the keys of the object", () => {
   const result1 = typedObjectKeys({
