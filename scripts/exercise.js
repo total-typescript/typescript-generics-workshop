@@ -5,7 +5,6 @@ const chokidar = require("chokidar");
 const fg = require("fast-glob");
 
 const srcPath = path.resolve(__dirname, "../src");
-const tsconfigPath = path.resolve(__dirname, "../tsconfig.json");
 
 const [, , exercise] = process.argv;
 

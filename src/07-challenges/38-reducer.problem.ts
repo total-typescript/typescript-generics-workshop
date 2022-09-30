@@ -28,7 +28,7 @@ it("Should create a reducer which can handle all events", () => {
       },
       LOGOUT: (state, event) => {
         type tests = [Expect<Equal<typeof event, { type: "LOGOUT" }>>];
-        return { ...state, isLoggedIn: true };
+        return { ...state, isLoggedIn: false };
       },
     },
   });
@@ -43,7 +43,7 @@ it("Should create a reducer which can handle all events", () => {
 
   type tests = [
     Expect<Equal<typeof loggedInState, State>>,
-    Expect<Equal<typeof loggedOutState, State>>
+    Expect<Equal<typeof loggedOutState, State>>,
   ];
 });
 
@@ -63,6 +63,6 @@ it("Should not allow invalid keys to be passed to state", () => {
   });
 
   type tests = [
-    Expect<Equal<typeof reducer, (state: State, event: Event) => State>>
+    Expect<Equal<typeof reducer, (state: State, event: Event) => State>>,
   ];
 });
