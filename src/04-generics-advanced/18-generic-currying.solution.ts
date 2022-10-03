@@ -1,35 +1,27 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const createTransformable = <T>(item: T) => {
-  return {
-    item,
-    transform: <U>(transformer: (item: T) => U) =>
-      createTransformable(transformer(item)),
+export const curryFunction =
+  <T>(t: T) =>
+  <U>(u: U) =>
+  <V>(v: V) => {
+    return {
+      t,
+      u,
+      v,
+    };
   };
-};
 
-it("Should allow for transforming the initial value passed in", () => {
-  const result = createTransformable("hello").transform((item) =>
-    item.toUpperCase(),
-  );
+it("Should return an object which matches the types of each input", () => {
+  const result = curryFunction(1)(2)(3);
 
-  expect(result.item).toEqual("HELLO");
+  expect(result).toEqual({
+    t: 1,
+    u: 2,
+    v: 3,
+  });
 
-  type test1 = Expect<Equal<typeof result.item, string>>;
-});
-
-it("Should also transform the type", () => {
-  const numberResult = createTransformable(12);
-
-  expect(numberResult.item).toEqual(12);
-
-  const stringResult = numberResult.transform((item) => item.toString());
-
-  expect(stringResult.item).toEqual("12");
-
-  type tests = [
-    Expect<Equal<typeof numberResult.item, number>>,
-    Expect<Equal<typeof stringResult.item, string>>,
+  type test = [
+    Expect<Equal<typeof result, { t: number; u: number; v: number }>>,
   ];
 });
