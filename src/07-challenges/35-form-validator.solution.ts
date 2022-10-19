@@ -9,7 +9,7 @@ const makeFormValidatorFactory =
   <TInput extends ValidatorConfig<keyof TValidators>>(config: TInput) => {
     return (
       values: Record<keyof TInput, string>,
-    ): Record<keyof TInput, string | undefined> => {
+    ): Partial<Record<keyof TInput, string>> => {
       const errors = {} as any;
 
       for (const key in config) {
