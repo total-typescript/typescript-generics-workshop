@@ -3,7 +3,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 const returnBothOfWhatIPassIn = (a: unknown, b: unknown) => {};
 
-it("Should return a tuple of the arguments you pass", () => {
+it("Should return an object of the arguments you pass", () => {
   const result = returnBothOfWhatIPassIn("a", 1);
 
   expect(result).toEqual({
