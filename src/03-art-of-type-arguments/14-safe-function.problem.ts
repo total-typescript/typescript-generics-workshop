@@ -3,7 +3,31 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 const makeSafe =
   (func: unknown) =>
-  (...args: unknown[]) => {};
+  (
+    ...args: unknown
+  ):
+    | {
+        type: "success";
+        result: unknown;
+      }
+    | {
+        type: "failure";
+        error: Error;
+      } => {
+    try {
+      const result = func(...args);
+
+      return {
+        type: "success",
+        result,
+      };
+    } catch (e) {
+      return {
+        type: "failure",
+        error: e as Error,
+      };
+    }
+  };
 
 it("Should return the result with a { type: 'success' } on a successful call", () => {
   const func = makeSafe(() => 1);

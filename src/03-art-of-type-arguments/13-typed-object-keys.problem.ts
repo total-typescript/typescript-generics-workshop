@@ -2,11 +2,12 @@ import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
 /**
- * You can either specify the entire object in
- * the generic slot...
+ * There are two possible solutions to this problem - and it's
+ * to do with the way you specify the generic. Can you get
+ * both solutions?
  */
-const typedObjectKeys = <TObject extends {}>(obj: TObject) => {
-  return Object.keys(obj) as Array<keyof TObject>;
+const typedObjectKeys = (obj: unknown) => {
+  return Object.keys(obj);
 };
 
 it("Should return the keys of the object", () => {

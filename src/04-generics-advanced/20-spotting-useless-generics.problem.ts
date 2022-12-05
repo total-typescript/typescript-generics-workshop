@@ -1,10 +1,6 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-/**
- * The function we made earlier could be refactored
- * to use only ONE generic.
- */
 const returnBothOfWhatIPassIn = <T1, T2>(params: {
   a: T1;
   b: T2;

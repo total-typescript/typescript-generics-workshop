@@ -21,8 +21,10 @@ const appConfig = {
 
 export const getFeatureFlags = (
   config: unknown,
-  override: (flags: unknown) => unknown
-) => {};
+  override: (flags: unknown) => unknown,
+) => {
+  return override(config.rawConfig.featureFlags.homePage);
+};
 
 it("Should return the homePage flag object", () => {
   const flags = getFeatureFlags(appConfig, (flags) => flags);
@@ -33,7 +35,7 @@ it("Should return the homePage flag object", () => {
   });
 
   type tests = [
-    Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>
+    Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>,
   ];
 });
 
@@ -49,6 +51,6 @@ it("Should allow you to modify the result", () => {
   });
 
   type tests = [
-    Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>
+    Expect<Equal<typeof flags, { showBanner: boolean; showLogOut: boolean }>>,
   ];
 });

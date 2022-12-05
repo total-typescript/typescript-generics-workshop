@@ -1,6 +1,11 @@
 import { expect, it } from "vitest";
 
-const createClassNamesFactory = (param: unknown) => {};
+const createClassNamesFactory =
+  (classes: unknown) =>
+  (type: unknown, ...otherClasses: unknown[]) => {
+    const classList = [classes[type], ...otherClasses];
+    return classList.join(" ");
+  };
 
 const getBg = createClassNamesFactory({
   primary: "bg-blue-500",
