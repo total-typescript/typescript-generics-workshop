@@ -7,6 +7,8 @@
 1. Generics in template literal types
 1. Multiple generics per object
 
+ADD DYNAMIC FUNCTION ARGS
+
 ## Things NOT to add
 
 These things are out-of-scope, or will be included in other modules
