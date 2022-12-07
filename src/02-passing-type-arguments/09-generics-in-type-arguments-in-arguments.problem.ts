@@ -11,7 +11,9 @@ export class Component<TProps> {
   getProps = () => this.props;
 }
 
-const cloneComponent = (component: unknown) => {};
+const cloneComponent = (component: unknown) => {
+  return new Component(component.getProps());
+};
 
 it("Should clone the props from a passed-in Component", () => {
   const component = new Component({ a: 1, b: 2, c: 3 });
@@ -23,6 +25,6 @@ it("Should clone the props from a passed-in Component", () => {
   expect(result).toEqual({ a: 1, b: 2, c: 3 });
 
   type tests = [
-    Expect<Equal<typeof result, { a: number; b: number; c: number }>>,
+    Expect<Equal<typeof result, { a: number; b: number; c: number }>>
   ];
 });
