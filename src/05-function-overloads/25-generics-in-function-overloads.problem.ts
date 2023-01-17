@@ -2,6 +2,9 @@ import { it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
 function returnWhatIPassInExceptFor1(t: unknown): unknown {
+  if (t === 1) {
+    return 2;
+  }
   return t;
 }
 
