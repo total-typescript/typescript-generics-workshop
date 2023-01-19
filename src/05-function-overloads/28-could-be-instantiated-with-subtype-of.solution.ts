@@ -8,20 +8,20 @@ const obj = {
 
 type ObjKey = keyof typeof obj;
 
-function getObjKey(): 1;
-function getObjKey<TKey extends ObjKey>(key: TKey): typeof obj[TKey];
-function getObjKey(key: ObjKey = "a") {
+function getObjValue(): 1;
+function getObjValue<TKey extends ObjKey>(key: TKey): typeof obj[TKey];
+function getObjValue(key: ObjKey = "a") {
   return obj[key];
 }
 
-const one = getObjKey("a");
-const oneByDefault = getObjKey();
-const two = getObjKey("b");
-const three = getObjKey("c");
+const one = getObjValue("a");
+const oneByDefault = getObjValue();
+const two = getObjValue("b");
+const three = getObjValue("c");
 
 type tests = [
   Expect<Equal<typeof one, 1>>,
   Expect<Equal<typeof oneByDefault, 1>>,
   Expect<Equal<typeof two, 2>>,
-  Expect<Equal<typeof three, 3>>,
+  Expect<Equal<typeof three, 3>>
 ];
