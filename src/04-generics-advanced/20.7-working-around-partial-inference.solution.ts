@@ -1,7 +1,7 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
 export const makeSelectors =
-  <TSource = "Type argument expected in makeSelectors">() =>
+  <TSource = "makeSelectors expects to be passed a type argument">() =>
   <TSelectors extends Record<string, (source: TSource) => any>>(
     selectors: TSelectors
   ) => {
