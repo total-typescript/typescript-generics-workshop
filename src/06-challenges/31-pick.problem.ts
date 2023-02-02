@@ -1,7 +1,12 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const pick = (obj: unknown, pick: unknown) => {};
+const pick = (obj: {}, picked: string[]) => {
+  return picked.reduce((acc, key) => {
+    acc[key] = obj[key];
+    return acc;
+  }, {});
+};
 
 it("Should pick the keys from the object", () => {
   const result = pick(

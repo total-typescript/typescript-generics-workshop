@@ -1,8 +1,11 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const pick = <TObj, TPicked extends keyof TObj>(obj: TObj, pick: TPicked[]) => {
-  return pick.reduce((acc, key) => {
+const pick = <TObj, TPicked extends keyof TObj>(
+  obj: TObj,
+  picked: TPicked[]
+) => {
+  return picked.reduce((acc, key) => {
     acc[key] = obj[key];
     return acc;
   }, {} as Pick<TObj, TPicked>);
