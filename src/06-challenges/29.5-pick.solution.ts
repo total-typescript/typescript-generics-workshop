@@ -3,7 +3,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 const pick = <TObj, TPicked extends keyof TObj>(
   obj: TObj,
-  picked: TPicked[]
+  picked: Array<TPicked>
 ) => {
   return picked.reduce((acc, key) => {
     acc[key] = obj[key];
