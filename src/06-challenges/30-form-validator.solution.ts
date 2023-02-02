@@ -1,17 +1,15 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-type ValidatorsBase = Record<string, (value: string) => string | void>;
-
-type ValidatorConfig<ValidatorKey> = Record<string, Array<ValidatorKey>>;
-
 const makeFormValidatorFactory =
-  <TValidators extends ValidatorsBase>(validators: TValidators) =>
-  <TInput extends ValidatorConfig<keyof TValidators>>(config: TInput) => {
-    return (
-      values: Record<keyof TInput, string>
-    ): Record<keyof TInput, string | undefined> => {
-      const errors = {} as any;
+  <TValidatorKeys extends string>(
+    validators: Record<TValidatorKeys, (value: string) => string | void>
+  ) =>
+  <TObjKeys extends string>(
+    config: Record<TObjKeys, Array<TValidatorKeys>>
+  ) => {
+    return (values: Record<TObjKeys, string>) => {
+      const errors = {} as Record<TObjKeys, string | undefined>;
 
       for (const key in config) {
         for (const validator of config[key]) {
