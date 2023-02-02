@@ -1,7 +1,4 @@
 import { expect, it } from "vitest";
-import { Equal, Expect } from "../helpers/type-utils";
-
-// HELPERS
 
 type GetParamKeys<TTranslation extends string> = TTranslation extends ""
   ? []
@@ -12,18 +9,6 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
 type GetParamKeysAsUnion<TTranslation extends string> =
   GetParamKeys<TTranslation>[number];
 
-// CODE
-
-/**
- * In this example, the inner bits of the functions have been built out.
- * Feel free to modify them if needed, but the solution uses this code.
- *
- * Your job is to try and make the solutions type-safe.
- */
-const makeTranslations = (translations: unknown) => {
-  return translations;
-};
-
 const translate = (translations: unknown, key: unknown, ...args: unknown[]) => {
   const translation = translations[key];
   const params: any = args[0] || {};
@@ -33,24 +18,11 @@ const translate = (translations: unknown, key: unknown, ...args: unknown[]) => {
 
 // TESTS
 
-const translations = makeTranslations({
+const translations = {
   title: "Hello, {name}!",
   subtitle: "You have {count} unread messages.",
   button: "Click me!",
-});
-
-type tests = [
-  Expect<
-    Equal<
-      typeof translations,
-      {
-        title: "Hello, {name}!";
-        subtitle: "You have {count} unread messages.";
-        button: "Click me!";
-      }
-    >
-  >,
-];
+} as const;
 
 it("Should translate a translation without parameters", () => {
   const buttonText = translate(translations, "button");

@@ -1,8 +1,4 @@
-import { F } from "ts-toolbelt";
 import { expect, it } from "vitest";
-import { Equal, Expect } from "../helpers/type-utils";
-
-// HELPERS
 
 type GetParamKeys<TTranslation extends string> = TTranslation extends ""
   ? []
@@ -13,22 +9,16 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
 type GetParamKeysAsUnion<TTranslation extends string> =
   GetParamKeys<TTranslation>[number];
 
-// CODE
-
-const makeTranslations = <TTranslations extends Record<string, string>>(
-  translations: F.Narrow<TTranslations>,
-) => {
-  return translations;
-};
-
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TDynamicParams = GetParamKeysAsUnion<TTranslations[TKey]>,
+  TDynamicKeys = GetParamKeysAsUnion<TTranslations[TKey]>
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: TDynamicParams extends string ? [Record<TDynamicParams, string>] : []
+  ...args: TDynamicKeys extends string
+    ? [dynamicArgs: Record<TDynamicKeys, string>]
+    : []
 ) => {
   const translation = translations[key];
   const params: any = args[0] || {};
@@ -38,24 +28,11 @@ const translate = <
 
 // TESTS
 
-const translations = makeTranslations({
+const translations = {
   title: "Hello, {name}!",
   subtitle: "You have {count} unread messages.",
   button: "Click me!",
-});
-
-type tests = [
-  Expect<
-    Equal<
-      typeof translations,
-      {
-        title: "Hello, {name}!";
-        subtitle: "You have {count} unread messages.";
-        button: "Click me!";
-      }
-    >
-  >,
-];
+} as const;
 
 it("Should translate a translation without parameters", () => {
   const buttonText = translate(translations, "button");
