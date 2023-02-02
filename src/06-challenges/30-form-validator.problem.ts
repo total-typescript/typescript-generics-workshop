@@ -1,6 +1,22 @@
 import { expect, it } from "vitest";
 
-const makeFormValidatorFactory = (validators: unknown) => {};
+const makeFormValidatorFactory = (validators: unknown) => (config: unknown) => {
+  return (values: unknown) => {
+    const errors = {} as any;
+
+    for (const key in config) {
+      for (const validator of config[key]) {
+        const error = validators[validator](values[key]);
+        if (error) {
+          errors[key] = error;
+          break;
+        }
+      }
+    }
+
+    return errors;
+  };
+};
 
 const createFormValidator = makeFormValidatorFactory({
   required: (value) => {
