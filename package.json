@@ -95,7 +95,9 @@
     "e-33": "npm run exercise -- 33",
     "s-33": "npm run solution -- 33",
     "e-34": "npm run exercise -- 34",
-    "s-34": "npm run solution -- 34"
+    "s-34": "npm run solution -- 34",
+    "e-29.2": "npm run exercise -- 29.2",
+    "s-29.2": "npm run solution -- 29.2"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
