@@ -10,8 +10,8 @@ src/01-generics-intro/03-multiple-generics.problem.ts(20,5): error TS2344: Type 
 src/01-generics-intro/04-multiple-generics-per-object.problem.ts(23,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/01-generics-intro/05-generics-in-classes.problem.ts(22,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/01-generics-intro/06-generic-mapper.problem.ts(6,5): error TS2698: Spread types may only be created from object types.
-src/01-generics-intro/06-generic-mapper.problem.ts(7,18): error TS2571: Object is of type 'unknown'.
-src/01-generics-intro/06-generic-mapper.problem.ts(7,36): error TS2571: Object is of type 'unknown'.
+src/01-generics-intro/06-generic-mapper.problem.ts(7,18): error TS18046: 'user' is of type 'unknown'.
+src/01-generics-intro/06-generic-mapper.problem.ts(7,36): error TS18046: 'user' is of type 'unknown'.
 src/01-generics-intro/06-generic-mapper.problem.ts(31,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/01-generics-intro/06-generic-mapper.problem.ts(61,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/01-generics-intro/06-generic-mapper.problem.ts(81,5): error TS2578: Unused '@ts-expect-error' directive.
@@ -20,14 +20,14 @@ src/02-passing-type-arguments/07-create-new-set.problem.ts(8,29): error TS2558: 
 src/02-passing-type-arguments/07-create-new-set.problem.ts(12,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/07-create-new-set.problem.ts(13,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/08-default-generics.problem.ts(14,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(15,24): error TS2571: Object is of type 'unknown'.
+src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(15,24): error TS18046: 'component' is of type 'unknown'.
 src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(28,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/10-reduce.problem.ts(14,3): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/02-passing-type-arguments/10-reduce.problem.ts(28,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/11-data-fetcher.problem.ts(10,32): error TS2558: Expected 0 type arguments, but got 1.
 src/02-passing-type-arguments/11-data-fetcher.problem.ts(15,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(8,19): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(8,19): error TS18046: 'config' is of type 'unknown'.
 src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(41,14): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(47,7): error TS2698: Spread types may only be created from object types.
 src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(57,14): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -38,7 +38,7 @@ src/03-art-of-type-arguments/13-typed-object-keys.problem.ts(10,22): error TS276
     Argument of type 'unknown' is not assignable to parameter of type 'object'.
 src/03-art-of-type-arguments/13-typed-object-keys.problem.ts(21,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03-art-of-type-arguments/14-safe-function.problem.ts(7,5): error TS2370: A rest parameter must be of an array type.
-src/03-art-of-type-arguments/14-safe-function.problem.ts(18,22): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(18,22): error TS18046: 'func' is of type 'unknown'.
 src/03-art-of-type-arguments/14-safe-function.problem.ts(18,30): error TS2488: Type 'unknown' must have a '[Symbol.iterator]()' method that returns an iterator.
 src/03-art-of-type-arguments/14-safe-function.problem.ts(44,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03-art-of-type-arguments/14-safe-function.problem.ts(76,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -49,7 +49,7 @@ src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(14,10): error T
 src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(17,1): error TS2578: Unused '@ts-expect-error' directive.
 src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(22,1): error TS2578: Unused '@ts-expect-error' directive.
 src/03-art-of-type-arguments/15-array-or-array-member-in-generics.problem.ts(10,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/03-art-of-type-arguments/16-class-names-creator.problem.ts(7,24): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(7,24): error TS18046: 'classes' is of type 'unknown'.
 src/03-art-of-type-arguments/16-class-names-creator.problem.ts(34,3): error TS2578: Unused '@ts-expect-error' directive.
 src/03-art-of-type-arguments/16-class-names-creator.problem.ts(39,3): error TS2578: Unused '@ts-expect-error' directive.
 src/03-art-of-type-arguments/16-class-names-creator.problem.ts(42,3): error TS2578: Unused '@ts-expect-error' directive.
@@ -86,7 +86,7 @@ src/05-function-overloads/23-function-overload-implementation.problem.ts(42,49):
   Overload 2 of 2, '(role: \\"user\\"): UserPrivileges', gave the following error.
     Argument of type '\\"anonymous\\"' is not assignable to parameter of type '\\"user\\"'.
 src/05-function-overloads/23-function-overload-implementation.problem.ts(47,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(8,10): error TS2571: Object is of type 'unknown'.
+src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(8,10): error TS18046: 'generator' is of type 'unknown'.
 src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(18,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(26,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/25-generics-in-function-overloads.problem.ts(14,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -98,8 +98,8 @@ src/05-function-overloads/27-use-data-hook.problem.ts(37,23): error TS2344: Type
 src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts(11,43): error TS2322: Type '\\"a\\"' is not assignable to type 'TKey'.
   '\\"a\\"' is assignable to the constraint of type 'TKey', but 'TKey' could be instantiated with a different subtype of constraint '\\"a\\" | \\"b\\" | \\"c\\"'.
 src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts(22,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/06-challenges/29-infinite-scroll.problem.ts(5,16): error TS2571: Object is of type 'unknown'.
-src/06-challenges/29-infinite-scroll.problem.ts(8,24): error TS2571: Object is of type 'unknown'.
+src/06-challenges/29-infinite-scroll.problem.ts(5,16): error TS18046: 'params' is of type 'unknown'.
+src/06-challenges/29-infinite-scroll.problem.ts(8,24): error TS18046: 'params' is of type 'unknown'.
 src/06-challenges/29-infinite-scroll.problem.ts(36,5): error TS2578: Unused '@ts-expect-error' directive.
 src/06-challenges/29-infinite-scroll.problem.ts(69,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/29.2-dynamic-function-arguments.problem.ts(16,3): error TS2578: Unused '@ts-expect-error' directive.
@@ -113,9 +113,9 @@ src/06-challenges/29.5-pick.problem.ts(6,16): error TS7053: Element implicitly h
 src/06-challenges/29.5-pick.problem.ts(23,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/29.5-pick.problem.ts(36,7): error TS2578: Unused '@ts-expect-error' directive.
 src/06-challenges/30-form-validator.problem.ts(8,23): error TS2407: The right-hand side of a 'for...in' statement must be of type 'any', an object type or a type parameter, but here has type 'unknown'.
-src/06-challenges/30-form-validator.problem.ts(9,31): error TS2571: Object is of type 'unknown'.
-src/06-challenges/30-form-validator.problem.ts(10,23): error TS2571: Object is of type 'unknown'.
-src/06-challenges/30-form-validator.problem.ts(10,45): error TS2571: Object is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(9,31): error TS18046: 'config' is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(10,23): error TS18046: 'validators' is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(10,45): error TS18046: 'values' is of type 'unknown'.
 src/06-challenges/30-form-validator.problem.ts(23,14): error TS7006: Parameter 'value' implicitly has an 'any' type.
 src/06-challenges/30-form-validator.problem.ts(28,15): error TS7006: Parameter 'value' implicitly has an 'any' type.
 src/06-challenges/30-form-validator.problem.ts(33,11): error TS7006: Parameter 'value' implicitly has an 'any' type.
@@ -125,7 +125,7 @@ src/06-challenges/30-form-validator.problem.ts(83,5): error TS2578: Unused '@ts-
 src/06-challenges/32-data-fetcher-with-warning.problem.ts(22,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/33-compose.problem.ts(21,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/33-compose.problem.ts(28,5): error TS2578: Unused '@ts-expect-error' directive.
-src/06-challenges/34-internationalization.problem.ts(13,23): error TS2571: Object is of type 'unknown'.
+src/06-challenges/34-internationalization.problem.ts(13,23): error TS18046: 'translations' is of type 'unknown'.
 src/06-challenges/34-internationalization.problem.ts(16,43): error TS7006: Parameter '_' implicitly has an 'any' type.
 src/06-challenges/34-internationalization.problem.ts(16,46): error TS7006: Parameter 'key' implicitly has an 'any' type.
 src/06-challenges/34-internationalization.problem.ts(42,3): error TS2578: Unused '@ts-expect-error' directive.
