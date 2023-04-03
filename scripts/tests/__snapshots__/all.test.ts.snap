@@ -1,0 +1,1910 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tsc > Should have the correct TypeScript errors 1`] = `
+",src/01-generics-intro/01-return-what-i-pass-in.problem.ts(10,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/01-return-what-i-pass-in.problem.ts(10,52): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/02-generic-constraints.problem.ts(11,3): error TS2578: Unused '@ts-expect-error' directive.
+src/01-generics-intro/02-generic-constraints.problem.ts(14,3): error TS2578: Unused '@ts-expect-error' directive.
+src/01-generics-intro/02-generic-constraints.problem.ts(17,3): error TS2578: Unused '@ts-expect-error' directive.
+src/01-generics-intro/03-multiple-generics.problem.ts(20,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/04-multiple-generics-per-object.problem.ts(23,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/05-generics-in-classes.problem.ts(22,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/06-generic-mapper.problem.ts(6,5): error TS2698: Spread types may only be created from object types.
+src/01-generics-intro/06-generic-mapper.problem.ts(7,18): error TS2571: Object is of type 'unknown'.
+src/01-generics-intro/06-generic-mapper.problem.ts(7,36): error TS2571: Object is of type 'unknown'.
+src/01-generics-intro/06-generic-mapper.problem.ts(31,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/06-generic-mapper.problem.ts(61,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/01-generics-intro/06-generic-mapper.problem.ts(81,5): error TS2578: Unused '@ts-expect-error' directive.
+src/02-passing-type-arguments/07-create-new-set.problem.ts(7,29): error TS2558: Expected 0 type arguments, but got 1.
+src/02-passing-type-arguments/07-create-new-set.problem.ts(8,29): error TS2558: Expected 0 type arguments, but got 1.
+src/02-passing-type-arguments/07-create-new-set.problem.ts(12,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/02-passing-type-arguments/07-create-new-set.problem.ts(13,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/02-passing-type-arguments/08-default-generics.problem.ts(14,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(15,24): error TS2571: Object is of type 'unknown'.
+src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(28,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/02-passing-type-arguments/10-reduce.problem.ts(14,3): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/02-passing-type-arguments/10-reduce.problem.ts(28,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/02-passing-type-arguments/11-data-fetcher.problem.ts(10,32): error TS2558: Expected 0 type arguments, but got 1.
+src/02-passing-type-arguments/11-data-fetcher.problem.ts(15,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(8,19): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(41,14): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(47,7): error TS2698: Spread types may only be created from object types.
+src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts(57,14): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/13-typed-object-keys.problem.ts(10,22): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(o: {}): string[]', gave the following error.
+    Argument of type 'unknown' is not assignable to parameter of type '{}'.
+  Overload 2 of 2, '(o: object): string[]', gave the following error.
+    Argument of type 'unknown' is not assignable to parameter of type 'object'.
+src/03-art-of-type-arguments/13-typed-object-keys.problem.ts(21,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(7,5): error TS2370: A rest parameter must be of an array type.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(18,22): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(18,30): error TS2488: Type 'unknown' must have a '[Symbol.iterator]()' method that returns an iterator.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(44,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(76,7): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(96,3): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/14-safe-function.problem.ts(99,3): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(13,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(14,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(17,1): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/14.7-string-number-union.problem.ts(22,1): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/15-array-or-array-member-in-generics.problem.ts(10,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(7,24): error TS2571: Object is of type 'unknown'.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(34,3): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(39,3): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(42,3): error TS2578: Unused '@ts-expect-error' directive.
+src/03-art-of-type-arguments/16-class-names-creator.problem.ts(46,5): error TS2578: Unused '@ts-expect-error' directive.
+src/04-generics-advanced/17-you-say-goodbye-i-say-hello.problem.ts(11,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/17-you-say-goodbye-i-say-hello.problem.ts(19,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/17.5-inference-inside-generic-functions.problem.ts(12,5): error TS2322: Type 'Date' is not assignable to type 'Person[Key]'.
+  Type 'Date' is not assignable to type 'never'.
+src/04-generics-advanced/18-generic-currying.problem.ts(25,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/19-generic-interfaces-with-functions.problem.ts(54,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(18,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(19,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(20,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(31,17): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(33,25): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(34,24): error TS7006: Parameter 'source' implicitly has an 'any' type.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,33): error TS2339: Property 'getFullName' does not exist on type '{}'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,28): error TS2339: Property 'getFirstAndLastName' does not exist on type '{}'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,28): error TS2339: Property 'getFirstNameLength' does not exist on type '{}'.
+src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,52): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/22-function-overloads-vs-conditional-types.problem.ts(15,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/22-function-overloads-vs-conditional-types.problem.ts(23,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/23-function-overload-implementation.problem.ts(22,9): error TS2322: Type '{ sitesCanDelete: never[]; sitesCanEdit: never[]; sitesCanVisit: never[]; }' is not assignable to type 'AnonymousPrivileges'.
+  Object literal may only specify known properties, and 'sitesCanDelete' does not exist in type 'AnonymousPrivileges'.
+src/05-function-overloads/23-function-overload-implementation.problem.ts(28,9): error TS2322: Type '{ sitesCanEdit: never[]; sitesCanVisit: never[]; }' is not assignable to type 'AnonymousPrivileges'.
+  Object literal may only specify known properties, and 'sitesCanEdit' does not exist in type 'AnonymousPrivileges'.
+src/05-function-overloads/23-function-overload-implementation.problem.ts(42,49): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(role: \\"admin\\"): AdminPrivileges', gave the following error.
+    Argument of type '\\"anonymous\\"' is not assignable to parameter of type '\\"admin\\"'.
+  Overload 2 of 2, '(role: \\"user\\"): UserPrivileges', gave the following error.
+    Argument of type '\\"anonymous\\"' is not assignable to parameter of type '\\"user\\"'.
+src/05-function-overloads/23-function-overload-implementation.problem.ts(47,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(8,10): error TS2571: Object is of type 'unknown'.
+src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(18,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts(26,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/25-generics-in-function-overloads.problem.ts(14,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/25-generics-in-function-overloads.problem.ts(23,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/25-generics-in-function-overloads.problem.ts(24,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/25-generics-in-function-overloads.problem.ts(25,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/26-document.queryselector-example.problem.ts(15,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/27-use-data-hook.problem.ts(37,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts(11,43): error TS2322: Type '\\"a\\"' is not assignable to type 'TKey'.
+  '\\"a\\"' is assignable to the constraint of type 'TKey', but 'TKey' could be instantiated with a different subtype of constraint '\\"a\\" | \\"b\\" | \\"c\\"'.
+src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts(22,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/29-infinite-scroll.problem.ts(5,16): error TS2571: Object is of type 'unknown'.
+src/06-challenges/29-infinite-scroll.problem.ts(8,24): error TS2571: Object is of type 'unknown'.
+src/06-challenges/29-infinite-scroll.problem.ts(36,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/29-infinite-scroll.problem.ts(69,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/29.2-dynamic-function-arguments.problem.ts(16,3): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/29.2-dynamic-function-arguments.problem.ts(20,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/29.2-dynamic-function-arguments.problem.ts(26,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/29.2-dynamic-function-arguments.problem.ts(43,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/29.5-pick.problem.ts(6,5): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/06-challenges/29.5-pick.problem.ts(6,16): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+src/06-challenges/29.5-pick.problem.ts(23,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/29.5-pick.problem.ts(36,7): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/30-form-validator.problem.ts(8,23): error TS2407: The right-hand side of a 'for...in' statement must be of type 'any', an object type or a type parameter, but here has type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(9,31): error TS2571: Object is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(10,23): error TS2571: Object is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(10,45): error TS2571: Object is of type 'unknown'.
+src/06-challenges/30-form-validator.problem.ts(23,14): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/06-challenges/30-form-validator.problem.ts(28,15): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/06-challenges/30-form-validator.problem.ts(33,11): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/06-challenges/30-form-validator.problem.ts(59,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/30-form-validator.problem.ts(72,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/30-form-validator.problem.ts(83,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/32-data-fetcher-with-warning.problem.ts(22,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/33-compose.problem.ts(21,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/06-challenges/33-compose.problem.ts(28,5): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/34-internationalization.problem.ts(13,23): error TS2571: Object is of type 'unknown'.
+src/06-challenges/34-internationalization.problem.ts(16,43): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/06-challenges/34-internationalization.problem.ts(16,46): error TS7006: Parameter 'key' implicitly has an 'any' type.
+src/06-challenges/34-internationalization.problem.ts(42,3): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/34-internationalization.problem.ts(47,3): error TS2578: Unused '@ts-expect-error' directive.
+,"
+`;
+
+exports[`vitest > Should have the correct Vitest errors 1`] = `
+{
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/01-generics-intro/00-intro.explainer.ts",
+      "name": "src/01-generics-intro/00-intro.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/01-generics-intro/01-return-what-i-pass-in.problem.ts",
+      "name": "src/01-generics-intro/01-return-what-i-pass-in.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/01-generics-intro/01-return-what-i-pass-in.solution.ts",
+      "name": "src/01-generics-intro/01-return-what-i-pass-in.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should ONLY allow strings to be passed in",
+          "status": "passed",
+          "title": "Should ONLY allow strings to be passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/02-generic-constraints.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should ONLY allow strings to be passed in",
+          "status": "passed",
+          "title": "Should ONLY allow strings to be passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/02-generic-constraints.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object of the arguments you pass",
+          "status": "passed",
+          "title": "Should return an object of the arguments you pass",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/03-multiple-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object of the arguments you pass",
+          "status": "passed",
+          "title": "Should return an object of the arguments you pass",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/03-multiple-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object where a -> first and b -> second",
+          "status": "passed",
+          "title": "Should return an object where a -> first and b -> second",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/04-multiple-generics-per-object.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object where a -> first and b -> second",
+          "status": "passed",
+          "title": "Should return an object where a -> first and b -> second",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/04-multiple-generics-per-object.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object where a -> first and b -> second",
+          "status": "passed",
+          "title": "Should return an object where a -> first and b -> second",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/04-multiple-generics-per-object.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object where a -> first and b -> second",
+          "status": "passed",
+          "title": "Should return an object where a -> first and b -> second",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/04-multiple-generics-per-object.solution.3.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/01-generics-intro/04.5-excalidraw-sum-function.explainer.ts",
+      "name": "src/01-generics-intro/04.5-excalidraw-sum-function.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should create an object containing props",
+          "status": "passed",
+          "title": "Should create an object containing props",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/05-generics-in-classes.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should create an object containing props",
+          "status": "passed",
+          "title": "Should create an object containing props",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/05-generics-in-classes.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should add fullName to an object which only contains firstName and lastName",
+          "status": "passed",
+          "title": "Should add fullName to an object which only contains firstName and lastName",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should retain other properties passed in",
+          "status": "passed",
+          "title": "Should retain other properties passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail when the object passed in does not contain firstName",
+          "status": "passed",
+          "title": "Should fail when the object passed in does not contain firstName",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/06-generic-mapper.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should add fullName to an object which only contains firstName and lastName",
+          "status": "passed",
+          "title": "Should add fullName to an object which only contains firstName and lastName",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should retain other properties passed in",
+          "status": "passed",
+          "title": "Should retain other properties passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fail when the object passed in does not contain firstName",
+          "status": "passed",
+          "title": "Should fail when the object passed in does not contain firstName",
+        },
+      ],
+      "message": "",
+      "name": "src/01-generics-intro/06-generic-mapper.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/01-generics-intro/06.5-orta-generics.explainer.ts",
+      "name": "src/01-generics-intro/06.5-orta-generics.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/07-create-new-set.problem.ts",
+      "name": "src/02-passing-type-arguments/07-create-new-set.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/07-create-new-set.solution.ts",
+      "name": "src/02-passing-type-arguments/07-create-new-set.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/08-default-generics.problem.ts",
+      "name": "src/02-passing-type-arguments/08-default-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/08-default-generics.solution.ts",
+      "name": "src/02-passing-type-arguments/08-default-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should clone the props from a passed-in Component",
+          "status": "passed",
+          "title": "Should clone the props from a passed-in Component",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should clone the props from a passed-in Component",
+          "status": "passed",
+          "title": "Should clone the props from a passed-in Component",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should resolve to an object where name is the key",
+          "status": "passed",
+          "title": "Should resolve to an object where name is the key",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/10-reduce.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should resolve to an object where name is the key",
+          "status": "passed",
+          "title": "Should resolve to an object where name is the key",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/10-reduce.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch data from an API",
+          "status": "passed",
+          "title": "Should fetch data from an API",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/11-data-fetcher.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch data from an API",
+          "status": "passed",
+          "title": "Should fetch data from an API",
+        },
+      ],
+      "message": "",
+      "name": "src/02-passing-type-arguments/11-data-fetcher.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/11.1-passing-type-arguments-in-cal.com.explainer.ts",
+      "name": "src/02-passing-type-arguments/11.1-passing-type-arguments-in-cal.com.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/02-passing-type-arguments/11.2-mark-erikson-story.explainer.ts",
+      "name": "src/02-passing-type-arguments/11.2-mark-erikson-story.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should return the homePage flag object",
+          "status": "passed",
+          "title": "Should return the homePage flag object",
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should allow you to modify the result",
+          "status": "passed",
+          "title": "Should allow you to modify the result",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/12-generics-at-different-levels.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should return the homePage flag object",
+          "status": "passed",
+          "title": "Should return the homePage flag object",
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should allow you to modify the result",
+          "status": "passed",
+          "title": "Should allow you to modify the result",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/12-generics-at-different-levels.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should return the homePage flag object",
+          "status": "passed",
+          "title": "Should return the homePage flag object",
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "getHomePageFeatureFlags",
+          ],
+          "failureMessages": [],
+          "fullName": " getHomePageFeatureFlags Should allow you to modify the result",
+          "status": "passed",
+          "title": "Should allow you to modify the result",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/12-generics-at-different-levels.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the keys of the object",
+          "status": "passed",
+          "title": "Should return the keys of the object",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/13-typed-object-keys.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the keys of the object",
+          "status": "passed",
+          "title": "Should return the keys of the object",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/13-typed-object-keys.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the keys of the object",
+          "status": "passed",
+          "title": "Should return the keys of the object",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/13-typed-object-keys.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the result with a { type: 'success' } on a successful call",
+          "status": "passed",
+          "title": "Should return the result with a { type: 'success' } on a successful call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the error on a thrown call",
+          "status": "passed",
+          "title": "Should return the error on a thrown call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should properly match the function's arguments",
+          "status": "passed",
+          "title": "Should properly match the function's arguments",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/14-safe-function.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the result on a successful call",
+          "status": "passed",
+          "title": "Should return the result on a successful call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the error on a thrown call",
+          "status": "passed",
+          "title": "Should return the error on a thrown call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should properly match the function's arguments",
+          "status": "passed",
+          "title": "Should properly match the function's arguments",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/14-safe-function.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the result on a successful call",
+          "status": "passed",
+          "title": "Should return the result on a successful call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the error on a thrown call",
+          "status": "passed",
+          "title": "Should return the error on a thrown call",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should properly match the function's arguments",
+          "status": "passed",
+          "title": "Should properly match the function's arguments",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/14-safe-function.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/14.5-literal-inference.explainer.ts",
+      "name": "src/03-art-of-type-arguments/14.5-literal-inference.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/14.6-literal-inference-on-arguments.explainer.ts",
+      "name": "src/03-art-of-type-arguments/14.6-literal-inference-on-arguments.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/14.7-string-number-union.problem.ts",
+      "name": "src/03-art-of-type-arguments/14.7-string-number-union.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/14.7-string-number-union.solution.ts",
+      "name": "src/03-art-of-type-arguments/14.7-string-number-union.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/15-array-or-array-member-in-generics.problem.ts",
+      "name": "src/03-art-of-type-arguments/15-array-or-array-member-in-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/15-array-or-array-member-in-generics.solution.ts",
+      "name": "src/03-art-of-type-arguments/15-array-or-array-member-in-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you create classes from a className factory",
+          "status": "passed",
+          "title": "Should let you create classes from a className factory",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you pass additional classes which get appended",
+          "status": "passed",
+          "title": "Should let you pass additional classes which get appended",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a type of string",
+          "status": "passed",
+          "title": "Should return a type of string",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass invalid variants",
+          "status": "passed",
+          "title": "Should not let you pass invalid variants",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass an invalid object to createClassNamesFactory",
+          "status": "passed",
+          "title": "Should not let you pass an invalid object to createClassNamesFactory",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/16-class-names-creator.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you create classes from a className factory",
+          "status": "passed",
+          "title": "Should let you create classes from a className factory",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you pass additional classes which get appended",
+          "status": "passed",
+          "title": "Should let you pass additional classes which get appended",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a type of string",
+          "status": "passed",
+          "title": "Should return a type of string",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass invalid variants",
+          "status": "passed",
+          "title": "Should not let you pass invalid variants",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass an invalid object to createClassNamesFactory",
+          "status": "passed",
+          "title": "Should not let you pass an invalid object to createClassNamesFactory",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/16-class-names-creator.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you create classes from a className factory",
+          "status": "passed",
+          "title": "Should let you create classes from a className factory",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you pass additional classes which get appended",
+          "status": "passed",
+          "title": "Should let you pass additional classes which get appended",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a type of string",
+          "status": "passed",
+          "title": "Should return a type of string",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass invalid variants",
+          "status": "passed",
+          "title": "Should not let you pass invalid variants",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass an invalid object to createClassNamesFactory",
+          "status": "passed",
+          "title": "Should not let you pass an invalid object to createClassNamesFactory",
+        },
+      ],
+      "message": "",
+      "name": "src/03-art-of-type-arguments/16-class-names-creator.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/03-art-of-type-arguments/16.5-generics-in-react-query.explainer.ts",
+      "name": "src/03-art-of-type-arguments/16.5-generics-in-react-query.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return goodbye when hello is passed in",
+          "status": "passed",
+          "title": "Should return goodbye when hello is passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return hello when goodbye is passed in",
+          "status": "passed",
+          "title": "Should return hello when goodbye is passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/17-you-say-goodbye-i-say-hello.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return goodbye when hello is passed in",
+          "status": "passed",
+          "title": "Should return goodbye when hello is passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return hello when goodbye is passed in",
+          "status": "passed",
+          "title": "Should return hello when goodbye is passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/17-you-say-goodbye-i-say-hello.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return goodbye when hello is passed in",
+          "status": "passed",
+          "title": "Should return goodbye when hello is passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return hello when goodbye is passed in",
+          "status": "passed",
+          "title": "Should return hello when goodbye is passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/17-you-say-goodbye-i-say-hello.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/17.5-inference-inside-generic-functions.problem.ts",
+      "name": "src/04-generics-advanced/17.5-inference-inside-generic-functions.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/17.5-inference-inside-generic-functions.solution.ts",
+      "name": "src/04-generics-advanced/17.5-inference-inside-generic-functions.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object which matches the types of each input",
+          "status": "passed",
+          "title": "Should return an object which matches the types of each input",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/18-generic-currying.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return an object which matches the types of each input",
+          "status": "passed",
+          "title": "Should return an object which matches the types of each input",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/18-generic-currying.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you get and set to/from the cache",
+          "status": "passed",
+          "title": "Should let you get and set to/from the cache",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you clone the cache using a transform function",
+          "status": "passed",
+          "title": "Should let you clone the cache using a transform function",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/19-generic-interfaces-with-functions.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you get and set to/from the cache",
+          "status": "passed",
+          "title": "Should let you get and set to/from the cache",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should let you clone the cache using a transform function",
+          "status": "passed",
+          "title": "Should let you clone the cache using a transform function",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/19-generic-interfaces-with-functions.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a tuple of the properties a and b",
+          "status": "passed",
+          "title": "Should return a tuple of the properties a and b",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/20-spotting-useless-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return a tuple of the properties a and b",
+          "status": "passed",
+          "title": "Should return a tuple of the properties a and b",
+        },
+      ],
+      "message": "",
+      "name": "src/04-generics-advanced/20-spotting-useless-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts",
+      "name": "src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.5-spotting-missing-generics.solution.ts",
+      "name": "src/04-generics-advanced/20.5-spotting-missing-generics.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.6-reusable-context.problem.ts",
+      "name": "src/04-generics-advanced/20.6-reusable-context.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.6-reusable-context.solution.ts",
+      "name": "src/04-generics-advanced/20.6-reusable-context.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.6-trpc-builder.explainer.ts",
+      "name": "src/04-generics-advanced/20.6-trpc-builder.explainer.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts",
+      "name": "src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/04-generics-advanced/20.7-working-around-partial-inference.solution.ts",
+      "name": "src/04-generics-advanced/20.7-working-around-partial-inference.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/21-what-is-a-function-overload.problem.ts",
+      "name": "src/05-function-overloads/21-what-is-a-function-overload.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/21-what-is-a-function-overload.solution.ts",
+      "name": "src/05-function-overloads/21-what-is-a-function-overload.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return goodbye when hello is passed in",
+          "status": "passed",
+          "title": "Should return goodbye when hello is passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return hello when goodbye is passed in",
+          "status": "passed",
+          "title": "Should return hello when goodbye is passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/22-function-overloads-vs-conditional-types.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return goodbye when hello is passed in",
+          "status": "passed",
+          "title": "Should return goodbye when hello is passed in",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return hello when goodbye is passed in",
+          "status": "passed",
+          "title": "Should return hello when goodbye is passed in",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/22-function-overloads-vs-conditional-types.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the correct privileges",
+          "status": "passed",
+          "title": "Should return the correct privileges",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/23-function-overload-implementation.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the correct privileges",
+          "status": "passed",
+          "title": "Should return the correct privileges",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/23-function-overload-implementation.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/24-function-overloads-vs-union-types.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/24-function-overloads-vs-union-types.solution.1.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should accept an object where the generator is a function",
+          "status": "passed",
+          "title": "Should accept an object where the generator is a function",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/24-function-overloads-vs-union-types.solution.2.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the type 2 when you pass in 1",
+          "status": "passed",
+          "title": "Should return the type 2 when you pass in 1",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Otherwise, should return what you pass in",
+          "status": "passed",
+          "title": "Otherwise, should return what you pass in",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/25-generics-in-function-overloads.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return the type 2 when you pass in 1",
+          "status": "passed",
+          "title": "Should return the type 2 when you pass in 1",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Otherwise, should return what you pass in",
+          "status": "passed",
+          "title": "Otherwise, should return what you pass in",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/25-generics-in-function-overloads.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/26-document.queryselector-example.problem.ts",
+      "name": "src/05-function-overloads/26-document.queryselector-example.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/26-document.queryselector-example.solution.ts",
+      "name": "src/05-function-overloads/26-document.queryselector-example.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return undefined if no initial data is passed",
+          "status": "passed",
+          "title": "Should return undefined if no initial data is passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should NOT return undefined if initial data is passed",
+          "status": "passed",
+          "title": "Should NOT return undefined if initial data is passed",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/27-use-data-hook.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should return undefined if no initial data is passed",
+          "status": "passed",
+          "title": "Should return undefined if no initial data is passed",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should NOT return undefined if initial data is passed",
+          "status": "passed",
+          "title": "Should NOT return undefined if initial data is passed",
+        },
+      ],
+      "message": "",
+      "name": "src/05-function-overloads/27-use-data-hook.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts",
+      "name": "src/05-function-overloads/28-could-be-instantiated-with-subtype-of.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [],
+      "message": "No test found in suite src/05-function-overloads/28-could-be-instantiated-with-subtype-of.solution.ts",
+      "name": "src/05-function-overloads/28-could-be-instantiated-with-subtype-of.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch more data when scrolling",
+          "status": "passed",
+          "title": "Should fetch more data when scrolling",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should ensure that the key is one of the properties of the row",
+          "status": "passed",
+          "title": "Should ensure that the key is one of the properties of the row",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should allow you to pass initialRows",
+          "status": "passed",
+          "title": "Should allow you to pass initialRows",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29-infinite-scroll.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch more data when scrolling",
+          "status": "passed",
+          "title": "Should fetch more data when scrolling",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should ensure that the key is one of the properties of the row",
+          "status": "passed",
+          "title": "Should ensure that the key is one of the properties of the row",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should allow you to pass initialRows",
+          "status": "passed",
+          "title": "Should allow you to pass initialRows",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29-infinite-scroll.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to pass a second argument when you choose an event with a payload",
+          "status": "passed",
+          "title": "Should force you to pass a second argument when you choose an event with a payload",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should prevent you from passing a second argument when you choose an event without a payload",
+          "status": "passed",
+          "title": "Should prevent you from passing a second argument when you choose an event without a payload",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29.2-dynamic-function-arguments.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to pass a second argument when you choose an event with a payload",
+          "status": "passed",
+          "title": "Should force you to pass a second argument when you choose an event with a payload",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should prevent you from passing a second argument when you choose an event without a payload",
+          "status": "passed",
+          "title": "Should prevent you from passing a second argument when you choose an event without a payload",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29.2-dynamic-function-arguments.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should pick the keys from the object",
+          "status": "passed",
+          "title": "Should pick the keys from the object",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to pass keys which do not exist in the object",
+          "status": "passed",
+          "title": "Should not allow you to pass keys which do not exist in the object",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29.5-pick.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should pick the keys from the object",
+          "status": "passed",
+          "title": "Should pick the keys from the object",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to pass keys which do not exist in the object",
+          "status": "passed",
+          "title": "Should not allow you to pass keys which do not exist in the object",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/29.5-pick.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should properly validate a user",
+          "status": "passed",
+          "title": "Should properly validate a user",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to specify a validator that does not exist",
+          "status": "passed",
+          "title": "Should not allow you to specify a validator that does not exist",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to validate an object property that does not exist",
+          "status": "passed",
+          "title": "Should not allow you to validate an object property that does not exist",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/30-form-validator.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should properly validate a user",
+          "status": "passed",
+          "title": "Should properly validate a user",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to specify a validator that does not exist",
+          "status": "passed",
+          "title": "Should not allow you to specify a validator that does not exist",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not allow you to validate an object property that does not exist",
+          "status": "passed",
+          "title": "Should not allow you to validate an object property that does not exist",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/30-form-validator.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch data from an API",
+          "status": "passed",
+          "title": "Should fetch data from an API",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to add a type annotation with a helpful error message",
+          "status": "passed",
+          "title": "Should force you to add a type annotation with a helpful error message",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/32-data-fetcher-with-warning.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should fetch data from an API",
+          "status": "passed",
+          "title": "Should fetch data from an API",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to add a type annotation",
+          "status": "passed",
+          "title": "Should force you to add a type annotation",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/32-data-fetcher-with-warning.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should compose multiple functions together",
+          "status": "passed",
+          "title": "Should compose multiple functions together",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should error when the input to a function is not typed correctly",
+          "status": "passed",
+          "title": "Should error when the input to a function is not typed correctly",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/33-compose.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should compose multiple functions together",
+          "status": "passed",
+          "title": "Should compose multiple functions together",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/33-compose.solution.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should translate a translation without parameters",
+          "status": "passed",
+          "title": "Should translate a translation without parameters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should translate a translation WITH parameters",
+          "status": "passed",
+          "title": "Should translate a translation WITH parameters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to provide parameters if required",
+          "status": "passed",
+          "title": "Should force you to provide parameters if required",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass parameters if NOT required",
+          "status": "passed",
+          "title": "Should not let you pass parameters if NOT required",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/34-internationalization.problem.ts",
+      "status": "passed",
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should translate a translation without parameters",
+          "status": "passed",
+          "title": "Should translate a translation without parameters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should translate a translation WITH parameters",
+          "status": "passed",
+          "title": "Should translate a translation WITH parameters",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should force you to provide parameters if required",
+          "status": "passed",
+          "title": "Should force you to provide parameters if required",
+        },
+        {
+          "ancestorTitles": [
+            "",
+          ],
+          "failureMessages": [],
+          "fullName": " Should not let you pass parameters if NOT required",
+          "status": "passed",
+          "title": "Should not let you pass parameters if NOT required",
+        },
+      ],
+      "message": "",
+      "name": "src/06-challenges/34-internationalization.solution.ts",
+      "status": "passed",
+    },
+  ],
+}
+`;
