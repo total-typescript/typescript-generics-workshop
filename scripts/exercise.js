@@ -13,7 +13,12 @@ const compilerOptions = Object.entries(tsconfig.compilerOptions)
       }
       return "";
     }
-    return `--${key} ${value}`;
+
+    if (Array.isArray(value)) {
+      return `--${key} ${value.join(" ")}`;
+    }
+
+    return `--${key} ${JSON.stringify(value)}`;
   })
   .join(" ");
 
