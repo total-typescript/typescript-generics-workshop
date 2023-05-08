@@ -17,7 +17,7 @@ const createCache = <T>(initialCache?: Record<string, T>): Cache<T> => {
       cache[key] = value;
     },
     clone: (transform) => {
-      const newCache: Record<string, any> = {};
+      const newCache: Record<string, ReturnType<typeof transform>> = {};
 
       for (const key in cache) {
         newCache[key] = transform(cache[key]);
