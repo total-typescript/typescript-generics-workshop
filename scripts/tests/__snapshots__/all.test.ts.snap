@@ -56,7 +56,7 @@ src/03-art-of-type-arguments/16-class-names-creator.problem.ts(42,3): error TS25
 src/03-art-of-type-arguments/16-class-names-creator.problem.ts(46,5): error TS2578: Unused '@ts-expect-error' directive.
 src/04-generics-advanced/17-you-say-goodbye-i-say-hello.problem.ts(11,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/17-you-say-goodbye-i-say-hello.problem.ts(19,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/04-generics-advanced/17.5-inference-inside-generic-functions.problem.ts(12,5): error TS2322: Type 'Date' is not assignable to type 'Person[Key]'.
+src/04-generics-advanced/17.5-inference-inside-generic-functions.problem.ts(14,5): error TS2322: Type 'Date' is not assignable to type 'Person[Key]'.
   Type 'Date' is not assignable to type 'never'.
 src/04-generics-advanced/18-generic-currying.problem.ts(25,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/19-generic-interfaces-with-functions.problem.ts(54,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
