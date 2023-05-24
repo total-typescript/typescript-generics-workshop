@@ -2,7 +2,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 export const makeSelectors = <
   TSource,
-  TSelectors extends Record<string, (source: TSource) => any> = {},
+  TSelectors extends Record<string, (source: TSource) => any>,
 >(
   selectors: TSelectors,
 ) => {
