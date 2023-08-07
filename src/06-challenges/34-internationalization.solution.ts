@@ -9,13 +9,13 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TComputedArgs extends string[] = GetParamKeys<TTranslations[TKey]>,
+  TParamKeys extends string[] = GetParamKeys<TTranslations[TKey]>,
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: TComputedArgs extends []
+  ...args: TParamKeys extends []
     ? []
-    : [params: Record<TComputedArgs[number], string>]
+    : [params: Record<TParamKeys[number], string>]
 ) => {
   const translation = translations[key];
   const params: any = args[0] || {};
@@ -26,7 +26,7 @@ const translate = <
 // TESTS
 
 const translations = {
-  title: "Hello, {firstName} {surname}!",
+  title: "Hello, {name}!",
   subtitle: "You have {count} unread messages.",
   button: "Click me!",
 } as const;
@@ -39,7 +39,7 @@ it("Should translate a translation without parameters", () => {
 
 it("Should translate a translation WITH parameters", () => {
   const subtitle = translate(translations, "subtitle", {
-    count: "2",
+    count: "123123",
   });
 
   expect(subtitle).toEqual("You have 2 unread messages.");
