@@ -12,13 +12,13 @@ type GetParamKeysAsUnion<TTranslation extends string> =
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TDynamicKeys = GetParamKeysAsUnion<TTranslations[TKey]>
+  TDynamicKeys = GetParamKeysAsUnion<TTranslations[TKey]>,
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: TDynamicKeys extends string
-    ? [dynamicArgs: Record<TDynamicKeys, string>]
-    : []
+  ...args: [TDynamicKeys] extends [never]
+    ? []
+    : [dynamicArgs: Record<TDynamicKeys & string, string>]
 ) => {
   const translation = translations[key];
   const params: any = args[0] || {};
