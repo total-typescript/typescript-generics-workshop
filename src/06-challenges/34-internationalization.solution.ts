@@ -6,19 +6,16 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
   ? [Param, ...GetParamKeys<Tail>]
   : [];
 
-type GetParamKeysAsUnion<TTranslation extends string> =
-  GetParamKeys<TTranslation>[number];
-
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TDynamicKeys = GetParamKeysAsUnion<TTranslations[TKey]>,
+  TComputedArgs extends string[] = GetParamKeys<TTranslations[TKey]>,
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: [TDynamicKeys] extends [never]
+  ...args: TComputedArgs extends []
     ? []
-    : [dynamicArgs: Record<TDynamicKeys & string, string>]
+    : [params: Record<TComputedArgs[number], string>]
 ) => {
   const translation = translations[key];
   const params: any = args[0] || {};
@@ -29,7 +26,7 @@ const translate = <
 // TESTS
 
 const translations = {
-  title: "Hello, {name}!",
+  title: "Hello, {firstName} {surname}!",
   subtitle: "You have {count} unread messages.",
   button: "Click me!",
 } as const;
