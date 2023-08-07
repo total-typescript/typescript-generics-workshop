@@ -1873,9 +1873,15 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [],
+          "failureMessages": [
+            "expected 'You have 123123 unread messages.' to deeply equal 'You have 2 unread messages.'",
+          ],
           "fullName": " Should translate a translation WITH parameters",
-          "status": "passed",
+          "location": {
+            "column": 20,
+            "line": 45,
+          },
+          "status": "failed",
           "title": "Should translate a translation WITH parameters",
         },
         {
@@ -1899,7 +1905,7 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
       ],
       "message": "",
       "name": "src/06-challenges/34-internationalization.solution.ts",
-      "status": "passed",
+      "status": "failed",
     },
   ],
 }
