@@ -16,7 +16,9 @@ const translate = <
 >(
   translations: TTranslations,
   key: TKey,
-  ...args: TDynamicKeys extends string
+  ...args: [TDynamicKeys] extends [never] 
+    ? []
+    : TDynamicKeys extends string
     ? [dynamicArgs: Record<TDynamicKeys, string>]
     : []
 ) => {
