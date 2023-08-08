@@ -2,7 +2,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 export const makeSelectors = <
   TSource,
-  TSelectors extends Record<string, (source: TSource) => any> = {},
+  TSelectors extends Record<string, (source: TSource) => any>,
 >(
   selectors: TSelectors,
 ) => {
@@ -35,11 +35,11 @@ const selectors = makeSelectors<Source>({
 });
 
 type tests = [
-  Expect<Equal<typeof selectors["getFullName"], (source: Source) => string>>,
+  Expect<Equal<(typeof selectors)["getFullName"], (source: Source) => string>>,
   Expect<
-    Equal<typeof selectors["getFirstAndLastName"], (source: Source) => string>
+    Equal<(typeof selectors)["getFirstAndLastName"], (source: Source) => string>
   >,
   Expect<
-    Equal<typeof selectors["getFirstNameLength"], (source: Source) => number>
+    Equal<(typeof selectors)["getFirstNameLength"], (source: Source) => number>
   >,
 ];
