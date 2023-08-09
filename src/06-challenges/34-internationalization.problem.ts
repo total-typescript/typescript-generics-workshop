@@ -6,9 +6,6 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
   ? [Param, ...GetParamKeys<Tail>]
   : [];
 
-type GetParamKeysAsUnion<TTranslation extends string> =
-  GetParamKeys<TTranslation>[number];
-
 const translate = (translations: unknown, key: unknown, ...args: unknown[]) => {
   const translation = translations[key];
   const params: any = args[0] || {};

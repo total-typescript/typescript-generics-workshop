@@ -21,7 +21,6 @@ src/02-passing-type-arguments/07-create-new-set.problem.ts(12,10): error TS2344:
 src/02-passing-type-arguments/07-create-new-set.problem.ts(13,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/08-default-generics.problem.ts(14,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(15,24): error TS18046: 'component' is of type 'unknown'.
-src/02-passing-type-arguments/09-generics-in-type-arguments-in-arguments.problem.ts(28,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/02-passing-type-arguments/10-reduce.problem.ts(14,3): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
   No index signature with a parameter of type 'string' was found on type '{}'.
 src/02-passing-type-arguments/10-reduce.problem.ts(28,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -66,11 +65,8 @@ src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(20,10): error
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(31,17): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(33,25): error TS7006: Parameter 'source' implicitly has an 'any' type.
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(34,24): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,33): error TS2339: Property 'getFullName' does not exist on type '{}'.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,28): error TS2339: Property 'getFirstAndLastName' does not exist on type '{}'.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,28): error TS2339: Property 'getFirstNameLength' does not exist on type '{}'.
 src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,52): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -125,11 +121,11 @@ src/06-challenges/30-form-validator.problem.ts(83,5): error TS2578: Unused '@ts-
 src/06-challenges/32-data-fetcher-with-warning.problem.ts(22,12): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/33-compose.problem.ts(21,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/33-compose.problem.ts(28,5): error TS2578: Unused '@ts-expect-error' directive.
-src/06-challenges/34-internationalization.problem.ts(13,23): error TS18046: 'translations' is of type 'unknown'.
-src/06-challenges/34-internationalization.problem.ts(16,43): error TS7006: Parameter '_' implicitly has an 'any' type.
-src/06-challenges/34-internationalization.problem.ts(16,46): error TS7006: Parameter 'key' implicitly has an 'any' type.
-src/06-challenges/34-internationalization.problem.ts(42,3): error TS2578: Unused '@ts-expect-error' directive.
-src/06-challenges/34-internationalization.problem.ts(47,3): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/34-internationalization.problem.ts(10,23): error TS18046: 'translations' is of type 'unknown'.
+src/06-challenges/34-internationalization.problem.ts(13,43): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/06-challenges/34-internationalization.problem.ts(13,46): error TS7006: Parameter 'key' implicitly has an 'any' type.
+src/06-challenges/34-internationalization.problem.ts(39,3): error TS2578: Unused '@ts-expect-error' directive.
+src/06-challenges/34-internationalization.problem.ts(44,3): error TS2578: Unused '@ts-expect-error' directive.
 ,"
 `;
 
@@ -1877,9 +1873,15 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [],
+          "failureMessages": [
+            "expected 'You have 123123 unread messages.' to deeply equal 'You have 2 unread messages.'",
+          ],
           "fullName": " Should translate a translation WITH parameters",
-          "status": "passed",
+          "location": {
+            "column": 20,
+            "line": 45,
+          },
+          "status": "failed",
           "title": "Should translate a translation WITH parameters",
         },
         {
@@ -1903,7 +1905,7 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
       ],
       "message": "",
       "name": "src/06-challenges/34-internationalization.solution.ts",
-      "status": "passed",
+      "status": "failed",
     },
   ],
 }
