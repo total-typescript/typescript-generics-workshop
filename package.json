@@ -11,9 +11,9 @@
     "cross-fetch": "^3.1.5",
     "jsdom": "^21.1.1",
     "prettier": "^2.8.7",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.0.7",
-    "vitest": "^0.31.1"
+    "vitest": "^0.34.3"
   },
   "scripts": {
     "exercise": "tt-cli run",

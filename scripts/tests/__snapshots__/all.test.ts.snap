@@ -62,12 +62,16 @@ src/04-generics-advanced/19-generic-interfaces-with-functions.problem.ts(54,24):
 src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(18,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(19,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-generics-advanced/20.5-spotting-missing-generics.problem.ts(20,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(31,17): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(33,25): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(34,24): error TS7006: Parameter 'source' implicitly has an 'any' type.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,33): error TS2339: Property 'getFullName' does not exist on type '{}'.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,28): error TS2339: Property 'getFirstAndLastName' does not exist on type '{}'.
-src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,28): error TS2339: Property 'getFirstNameLength' does not exist on type '{}'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(30,33): error TS2558: Expected 2 type arguments, but got 1.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(32,15): error TS2339: Property 'firstName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(32,35): error TS2339: Property 'middleName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(32,56): error TS2339: Property 'lastName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(33,46): error TS2339: Property 'firstName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(33,66): error TS2339: Property 'lastName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(34,42): error TS2339: Property 'firstName' does not exist on type 'TSource'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(38,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(40,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
+src/04-generics-advanced/20.7-working-around-partial-inference.problem.ts(43,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/21-what-is-a-function-overload.problem.ts(13,52): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-function-overloads/22-function-overloads-vs-conditional-types.problem.ts(15,23): error TS2344: Type 'false' does not satisfy the constraint 'true'.
