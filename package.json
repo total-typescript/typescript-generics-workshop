@@ -13,7 +13,7 @@
     "prettier": "^2.8.7",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.0.7",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.4"
   },
   "scripts": {
     "exercise": "tt-cli run",
