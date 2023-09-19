@@ -5,7 +5,7 @@
   "author": "Matt Pocock <mattpocockvoice@gmail.com>",
   "license": "GPL",
   "devDependencies": {
-    "@total-typescript/exercise-cli": "^0.2.2",
+    "@total-typescript/exercise-cli": "^0.3.2",
     "@types/node": "^18.6.5",
     "@types/react": "^18.0.27",
     "cross-fetch": "^3.1.5",
