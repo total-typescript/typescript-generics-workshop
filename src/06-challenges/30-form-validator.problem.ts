@@ -1,8 +1,14 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-const makeFormValidatorFactory = (validators: unknown) => (config: unknown) => {
-  return (values: unknown) => {
+const makeFormValidatorFactory_simplified = 
+  <Rule extends string>(
+    validators: Record<Rule, (value: string) => string | undefined>
+  ) => 
+    <Key extends string>(
+      config: Record<Key, Array<Rule>>
+    ) => {
+  return (values: Record<Key, string>): Record<Key, string | undefined> => {
     const errors = {} as any;
 
     for (const key in config) {
@@ -18,6 +24,57 @@ const makeFormValidatorFactory = (validators: unknown) => (config: unknown) => {
     return errors;
   };
 };
+
+const makeFormValidatorFactory = 
+  <Rule extends string, TError extends (string | undefined) = undefined, ValueType extends any = string>(
+    validators: Record<Rule, (value: ValueType) => TError>
+  ) => 
+    <Key extends (keyof any)>(
+      config: Record<Key, Array<Rule>>
+    ) => {
+  return (values: Record<Key, ValueType>): Record<Key, /* TError */ string | undefined> => {
+    const errors = {} as any;
+
+    for (const key in config) {
+      for (const validator of config[key]) {
+        const error = validators[validator](values[key]);
+        if (error) {
+          errors[key] = error;
+          break;
+        }
+      }
+    }
+
+    return errors;
+  };
+};
+
+
+// TODO reimplement so the validator allow different kinds af value for different keys
+// const makeFormValidatorFactory_complex = 
+//   <Validator extends Record<string, (value: Value) => string | undefined>, Value = string>(
+//     validators: Validator
+//   ) => 
+//     <Key extends (keyof any)>(
+//       config: Record<Key, Array<keyof Validator>>
+//     ) => {
+//   return (values: Record<Key, Parameters<Validator[keyof Validator]>[0]>): Record<Key, ReturnType<Validator[keyof Validator]>> => {
+//     const errors = {} as any;
+
+//     for (const key in config) {
+//       for (const validator of config[key]) {
+//         const error = validators[validator](values[key]);
+//         if (error) {
+//           errors[key] = error;
+//           break;
+//         }
+//       }
+//     }
+
+//     return errors;
+//   };
+// };
+
 
 const createFormValidator = makeFormValidatorFactory({
   required: (value) => {
@@ -82,5 +139,35 @@ it("Should not allow you to validate an object property that does not exist", ()
   validator({
     // @ts-expect-error
     name: "123",
+  });
+});
+
+it("Should allow you to validate an object property that are not numbers", () => {
+  const createFormValidator = makeFormValidatorFactory({
+    required: (value) => {
+      if (value === undefined) {
+        return "Required";
+      }
+    },
+    positive: (value: number) => {
+      if (value > 0) {
+        return "Minimum value is 1";
+      }
+    }
+  });
+
+  const validator = createFormValidator({
+    id: ["required"],
+    age: ["positive"],
+  });
+
+  validator({
+    // @ts-expect-error
+    id: undefined
+  });
+
+  validator({
+    id: 1,
+    age: 123,
   });
 });

@@ -9,7 +9,7 @@ const pick = <Dict, Keys extends keyof Dict>(obj: Dict, picked: Array<Keys>) => 
   }, {} as Pick<Dict, Keys>);
 };
 
-const pick1 = <Dict, Keys extends Array<keyof Dict>>(obj: Dict, picked: Keys) => {
+const pick_withKeysArray = <Dict, Keys extends Array<keyof Dict>>(obj: Dict, picked: Keys) => {
   return picked.reduce((acc, key) => {
     acc[key] = obj[key];
     return acc;
