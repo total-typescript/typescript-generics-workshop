@@ -1,10 +1,10 @@
 import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
-export class Component {
-  private props: unknown;
+export class Component<T> {
+  private props: T;
 
-  constructor(props: unknown) {
+  constructor(props: T) {
     this.props = props;
   }
 

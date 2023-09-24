@@ -15,25 +15,27 @@ interface AdminPrivileges extends UserPrivileges {
 
 function getRolePrivileges(role: "admin"): AdminPrivileges;
 function getRolePrivileges(role: "user"): UserPrivileges;
-function getRolePrivileges(role: string): AnonymousPrivileges {
+function getRolePrivileges(role: string): AnonymousPrivileges;
+function getRolePrivileges(role: string):  AnonymousPrivileges | UserPrivileges | AdminPrivileges  {
   switch (role) {
     case "admin":
       return {
         sitesCanDelete: [],
         sitesCanEdit: [],
         sitesCanVisit: [],
-      };
+      } satisfies AdminPrivileges as AdminPrivileges;
     case "user":
       return {
         sitesCanEdit: [],
         sitesCanVisit: [],
-      };
+      } satisfies UserPrivileges as UserPrivileges;
     default:
       return {
         sitesCanVisit: [],
-      };
+      } satisfies AnonymousPrivileges as AnonymousPrivileges;
   }
 }
+
 
 it("Should return the correct privileges", () => {
   const adminPrivileges = getRolePrivileges("admin");

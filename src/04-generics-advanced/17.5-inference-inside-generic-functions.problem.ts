@@ -11,7 +11,7 @@ export function remapPerson<Key extends keyof Person>(
   value: Person[Key],
 ): Person[Key] {
   if (key === "birthdate") {
-    return new Date();
+    return new Date() as Person[Key];
   }
 
   return value;

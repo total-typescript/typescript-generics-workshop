@@ -1,6 +1,6 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-export const inferItemLiteral = <T>(t: T) => {
+export const inferItemLiteral = <T extends string | number>(t: T) => {
   return {
     output: t,
   };

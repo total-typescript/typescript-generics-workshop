@@ -10,10 +10,21 @@ const array = [
   },
 ];
 
-const obj = array.reduce((accum, item) => {
+const obj = array.reduce((accum: Record<string, typeof array[number]>, item) => {
   accum[item.name] = item;
   return accum;
 }, {});
+
+
+const obj2 = array.reduce<Record<string, typeof array[number]>>((accum, item) => {
+  accum[item.name] = item;
+  return accum;
+}, {});
+
+const obj3 = array.reduce((accum, item) => {
+  accum[item.name] = item;
+  return accum;
+}, {} as Record<string, typeof array[number]>);
 
 it("Should resolve to an object where name is the key", () => {
   expect(obj).toEqual({

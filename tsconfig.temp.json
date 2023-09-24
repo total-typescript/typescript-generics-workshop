@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": [
+      "vitest/importMeta"
+    ],
+    "target": "es2020",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "/home/karollukiewicz/Training/typescript-generics-workshop/src/01-generics-intro/03-multiple-generics.problem.ts"
+  ]
+}
