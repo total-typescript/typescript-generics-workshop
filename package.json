@@ -5,7 +5,7 @@
   "author": "Matt Pocock <mattpocockvoice@gmail.com>",
   "license": "GPL",
   "devDependencies": {
-    "@total-typescript/exercise-cli": "^0.3.2",
+    "@total-typescript/exercise-cli": "^0.4.0",
     "@types/node": "^18.6.5",
     "@types/react": "^18.0.27",
     "cross-fetch": "^3.1.5",
@@ -102,7 +102,23 @@
     "e-34": "tt-cli run 34",
     "s-34": "tt-cli run 34 --solution",
     "e-29.2": "tt-cli run 29.2",
-    "s-29.2": "tt-cli run 29.2 --solution"
+    "s-29.2": "tt-cli run 29.2 --solution",
+    "e-00": "tt-cli run 00",
+    "s-00": "tt-cli run 00 --solution",
+    "e-04.5": "tt-cli run 04.5",
+    "s-04.5": "tt-cli run 04.5 --solution",
+    "e-06.5": "tt-cli run 06.5",
+    "s-06.5": "tt-cli run 06.5 --solution",
+    "e-11.1": "tt-cli run 11.1",
+    "s-11.1": "tt-cli run 11.1 --solution",
+    "e-11.2": "tt-cli run 11.2",
+    "s-11.2": "tt-cli run 11.2 --solution",
+    "e-14.5": "tt-cli run 14.5",
+    "s-14.5": "tt-cli run 14.5 --solution",
+    "e-14.6": "tt-cli run 14.6",
+    "s-14.6": "tt-cli run 14.6 --solution",
+    "e-16.5": "tt-cli run 16.5",
+    "s-16.5": "tt-cli run 16.5 --solution"
   },
   "dependencies": {
     "ts-toolbelt": "^9.6.0"
