@@ -20,9 +20,9 @@ jobs:
           path: branch
 
       - name: Install Dependencies in Main
-        run: (cd main && pnpm install)
+        run: (cd main && npm install)
       - name: Install Dependencies in Branch
-        run: (cd branch && pnpm install)
+        run: (cd branch && npm install)
       - name: Create Snapshot In Main
         run: (cd main && npx tt-cli take-snapshot ./snap.md)
       - name: Copy Snapshot To Branch
