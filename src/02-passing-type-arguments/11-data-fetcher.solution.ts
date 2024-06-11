@@ -2,7 +2,7 @@ import { expect, it } from "vitest";
 import { Equal, Expect } from "../helpers/type-utils";
 
 const fetchData = async <TData>(url: string) => {
-  let data: TData = await fetch(url).then((response) => response.json());
+  const data = await fetch(url).then<TData>((response) => response.json());
 
   return data;
 };
