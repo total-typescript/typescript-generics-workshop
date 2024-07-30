@@ -70,7 +70,7 @@ it("Should retain other properties passed in", () => {
   ];
 });
 
-it("Should fail when the object passed in does not contain firstName", () => {
+it("Should fail when the object passed in does not contain lastName", () => {
   const users = [
     {
       firstName: "Matt",
