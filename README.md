@@ -6,7 +6,7 @@ Clone this repo or [open in Gitpod](https://gitpod.io/#https://github.com/total-
 
 Or get this project running instantly with **Codeanywhere** by clicking the button below:  
 
-[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/filamentphp/demo)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/total-typescript/typescript-generics-tutorial)
 
 ```sh
 # Installs all dependencies
