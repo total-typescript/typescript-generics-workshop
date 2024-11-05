@@ -12,6 +12,11 @@ npm install
 npm run exercise
 ```
 
+Alternatively, if you’d prefer to skip the local setup, you can get this repo running instantly with Codeanywhere. Just click the button below to get started and work seamlessly in your local VS Code or directly in your browser.
+
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/total-typescript/typescript-generics-workshop)
+
+
 ## How to take the course
 
 You'll notice that the course is split into exercises. Each exercise is split into a `*.problem` and a `*.solution`.
