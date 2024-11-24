@@ -8,7 +8,7 @@ function runGenerator(generator: { run: () => string } | (() => string)) {
   return generator.run();
 }
 
-it("Should accept an object where the generator is a function", () => {
+it("Should accept an object with a function run", () => {
   const result = runGenerator({
     run: () => "hello",
   });
@@ -18,7 +18,7 @@ it("Should accept an object where the generator is a function", () => {
   type test1 = Expect<Equal<typeof result, string>>;
 });
 
-it("Should accept an object where the generator is a function", () => {
+it("Should accept an argument where the generator is a function", () => {
   const result = runGenerator(() => "hello");
 
   expect(result).toBe("hello");
