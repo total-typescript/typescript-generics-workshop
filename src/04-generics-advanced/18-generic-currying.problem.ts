@@ -21,7 +21,16 @@ it("Should return an object which matches the types of each input", () => {
     v: 3,
   });
 
+  const result2 = curryFunction(1)("2")(["a"]);
+
+  expect(result2).toEqual({
+    t: 1,
+    u: "2",
+    v: ["a"],
+  });
+
   type test = [
     Expect<Equal<typeof result, { t: number; u: number; v: number }>>,
+    Expect<Equal<typeof result2, { t: number; u: string; v: string[] }>>,
   ];
 });
