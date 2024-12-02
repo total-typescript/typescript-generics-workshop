@@ -9,7 +9,7 @@ type GetParamKeys<TTranslation extends string> = TTranslation extends ""
 const translate = <
   TTranslations extends Record<string, string>,
   TKey extends keyof TTranslations,
-  TParamKeys extends string[] = GetParamKeys<TTranslations[TKey]>,
+  TParamKeys extends GetParamKeys<TTranslations[TKey]>,
 >(
   translations: TTranslations,
   key: TKey,
