@@ -9,7 +9,7 @@ const fetchData = async <TData>(url: string) => {
 
 it("Should fetch data from an API", async () => {
   const data = await fetchData<{ name: string }>(
-    "https://swapi.dev/api/people/1"
+    "https://swapi.py4e.com/api/people/1"
   );
   expect(data.name).toEqual("Luke Skywalker");
 

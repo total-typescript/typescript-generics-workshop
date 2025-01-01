@@ -12,7 +12,7 @@ const fetchData = async <
 
 it("Should fetch data from an API", async () => {
   const data = await fetchData<{ name: string }>(
-    "https://swapi.dev/api/people/1"
+    "https://swapi.py4e.com/api/people/1"
   );
   expect(data.name).toEqual("Luke Skywalker");
 
@@ -20,7 +20,7 @@ it("Should fetch data from an API", async () => {
 });
 
 it("Should force you to add a type annotation", async () => {
-  const data = await fetchData("https://swapi.dev/api/people/1");
+  const data = await fetchData("https://swapi.py4e.com/api/people/1");
 
   type tests = [
     Expect<Equal<typeof data, "You must pass a type argument to fetchData">>
